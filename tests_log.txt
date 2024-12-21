@@ -1,0 +1,246 @@
+   Compiling embedded-recruitment-task v0.1.0 (/home/mohamedibrahim/recruitment-task-0.0.1/embedded-recruitment-task-0.0.1)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 1.89s
+     Running unittests src/lib.rs (target/debug/deps/embedded_recruitment_task-b01fb3292ba0aa52)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/client.rs (target/debug/deps/client-f47767db4ca07b6c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/client_test.rs (target/debug/deps/client_test-fb4e645f5ef58936)
+
+running 6 tests
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Current server instances: {}
+Connecting to localhost:8080
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Current server instances: {"localhost:8080": Server { listener: TcpListener { addr: 127.0.0.1:8080, fd: 3 }, is_running: false, client_count: Mutex { data: 1, poisoned: false, .. } }}
+[2024-12-22T18:48:39Z WARN  embedded_recruitment_task::server] Server instance for address localhost:8080 already exists.
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server is running on 127.0.0.1:8080
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Current server instances: {"localhost:8080": Server { listener: TcpListener { addr: 127.0.0.1:8080, fd: 3 }, is_running: true, client_count: Mutex { data: 2, poisoned: false, .. } }}
+[2024-12-22T18:48:39Z WARN  embedded_recruitment_task::server] Server instance for address localhost:8080 already exists.
+Connecting to localhost:8080
+Connected to the server!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server is running on 127.0.0.1:8080
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Current server instances: {"localhost:8080": Server { listener: TcpListener { addr: 127.0.0.1:8080, fd: 3 }, is_running: true, client_count: Mutex { data: 3, poisoned: false, .. } }}
+Connected to the server!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:57240
+Disconnected from the server!
+[2024-12-22T18:48:39Z WARN  embedded_recruitment_task::server] Server instance for address localhost:8080 already exists.
+Connecting to localhost:8080
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Client disconnected. Current client count: 2
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server still has 2 active clients.
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server is running on 127.0.0.1:8080
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:57248
+Connected to the server!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 10, b: 20 }
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Current server instances: {"localhost:8080": Server { listener: TcpListener { addr: 127.0.0.1:8080, fd: 3 }, is_running: true, client_count: Mutex { data: 3, poisoned: false, .. } }}
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+Connecting to localhost:8080
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:57264
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 4 bytes from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server is running on 127.0.0.1:8080
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 30
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+Connected to the server!
+Connecting to localhost:8080
+Disconnected from the server!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:57272
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+Connected to the server!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Hello, World!
+Connecting to localhost:8080
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Client disconnected. Current client count: 2
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Current server instances: {"localhost:8080": Server { listener: TcpListener { addr: 127.0.0.1:8080, fd: 3 }, is_running: true, client_count: Mutex { data: 3, poisoned: false, .. } }, "localhost:2050": Server { listener: TcpListener { addr: 127.0.0.1:2050, fd: 10 }, is_running: false, client_count: Mutex { data: 1, poisoned: false, .. } }}
+Connected to the server!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:57280
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server still has 2 active clients.
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 17 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Hello, World!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Hello, World!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:57296
+Disconnected from the server!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Client disconnected. Current client count: 1
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 17 bytes from the server
+Connecting to localhost:2050
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server still has 1 active clients.
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Current server instances: {"localhost:8080": Server { listener: TcpListener { addr: 127.0.0.1:8080, fd: 3 }, is_running: true, client_count: Mutex { data: <locked>, poisoned: false, .. } }, "localhost:2010": Server { listener: TcpListener { addr: 127.0.0.1:2010, fd: 12 }, is_running: false, client_count: Mutex { data: 1, poisoned: false, .. } }, "localhost:2050": Server { listener: TcpListener { addr: 127.0.0.1:2050, fd: 10 }, is_running: true, client_count: Mutex { data: 1, poisoned: false, .. } }}
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Hello, World!
+[2024-12-22T18:48:39Z WARN  embedded_recruitment_task::server] Server instance for address localhost:8080 already exists.
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server is running on 127.0.0.1:2050
+Connected to the server!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server is running on 127.0.0.1:2010
+Connecting to localhost:2010
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:46160
+Connecting to localhost:8080
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Hello, World!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server is running on 127.0.0.1:8080
+Connected to the server!
+Connecting to localhost:2010
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 17 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Hello, World!
+Connected to the server!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Hello, World!
+Connected to the server!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 17 bytes from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Hello, World!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Hello, World!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 17 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Hello, World!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 16 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 16 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 16 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 12 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 12 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 12 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Goodbye!
+Disconnected from the server!
+Disconnected from the server!
+Disconnected from the server!
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Client disconnected. Current client count: 1
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server still has 1 active clients.
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:57310
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Hello, World!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 17 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Hello, World!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 16 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 12 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Goodbye!
+Disconnected from the server!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Shutdown signal sent.
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:49974
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server stopped.
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:49978
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Hello, World!
+test test_multiple_echo_messages ... ok
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 17 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Hello, World!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Hello, World!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 17 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Hello, World!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 16 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 16 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 16 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = How are you?
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 12 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 12 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received EchoMessage: Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 12 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received EchoResponse: content = Goodbye!
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 1, b: 2 }
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 4 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 3
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 1, b: 2 }
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 4 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 3
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 1, b: 2 }
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 4 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 3
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 10, b: 20 }
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 4 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 30
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 10, b: 20 }
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 4 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 30
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 10, b: 20 }
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 4 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 30
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 100, b: 200 }
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 5 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 300
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 100, b: 200 }
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 5 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 300
+[2024-12-22T18:48:39Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 100, b: 200 }
+[2024-12-22T18:48:39Z INFO  client_test::client] Received 5 bytes from the server
+[2024-12-22T18:48:39Z INFO  client_test::client] Received AddResponse: result = 300
+Disconnected from the server!
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+Disconnected from the server!
+Disconnected from the server!
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Shutdown signal sent.
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Shutdown signal sent.
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+[2024-12-22T18:48:39Z ERROR embedded_recruitment_task::server] Error handling client: Client disconnected
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server stopped.
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server stopped.
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server stopped.
+test test_client_echo_message ... ok
+test test_client_add_request ... ok
+test test_multiple_clients ... ok
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server stopped.
+test test_client_connection ... ok
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server stopped.
+[2024-12-22T18:48:39Z INFO  embedded_recruitment_task::server] Server stopped.
+test test_multiple_clients_with_different_message_types ... ok
+
+test result: ok. 6 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.20s
+
+   Doc-tests embedded_recruitment_task
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+

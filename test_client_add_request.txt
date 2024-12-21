@@ -1,0 +1,34 @@
+   Compiling embedded-recruitment-task v0.1.0 (/home/mohamedibrahim/recruitment-task-0.0.1/embedded-recruitment-task-0.0.1)
+    Finished `test` profile [unoptimized + debuginfo] target(s) in 2.12s
+     Running unittests src/lib.rs (target/debug/deps/embedded_recruitment_task-b01fb3292ba0aa52)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/client.rs (target/debug/deps/client-f47767db4ca07b6c)
+
+running 0 tests
+
+test result: ok. 0 passed; 0 failed; 0 ignored; 0 measured; 0 filtered out; finished in 0.00s
+
+     Running tests/client_test.rs (target/debug/deps/client_test-fb4e645f5ef58936)
+
+running 1 test
+[2024-12-22T18:33:22Z INFO  embedded_recruitment_task::server] Current server instances: {}
+Connecting to localhost:8080
+[2024-12-22T18:33:22Z INFO  embedded_recruitment_task::server] Server is running on 127.0.0.1:8080
+Connected to the server!
+[2024-12-22T18:33:22Z INFO  client_test::client] Receiving message from the server
+[2024-12-22T18:33:22Z INFO  embedded_recruitment_task::server] New client connected: 127.0.0.1:58256
+[2024-12-22T18:33:22Z INFO  embedded_recruitment_task::server] Received AddRequest: AddRequest { a: 10, b: 20 }
+[2024-12-22T18:33:22Z INFO  client_test::client] Received 4 bytes from the server
+[2024-12-22T18:33:22Z INFO  client_test::client] Received AddResponse: result = 30
+Disconnected from the server!
+[2024-12-22T18:33:22Z INFO  embedded_recruitment_task::server] Client disconnected.
+[2024-12-22T18:33:22Z INFO  embedded_recruitment_task::server] Shutdown signal sent.
+[2024-12-22T18:33:22Z INFO  embedded_recruitment_task::server] Server stopped.
+test test_client_add_request ... ok
+
+test result: ok. 1 passed; 0 failed; 0 ignored; 0 measured; 5 filtered out; finished in 0.20s
+
